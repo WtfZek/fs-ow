@@ -912,7 +912,7 @@ HEADER AREA CSS
 .main_menu ul li ul li a {
   padding: 3px 15px;
   display: block;
-  width: 180px;
+  width: 200px;
   transition: all 0.5s;
   border-radius: 3px;
   color: #6d859e;
@@ -938,7 +938,8 @@ HEADER AREA CSS
 }
 
 .logo {
-  max-width: 130px;
+  max-width: 180px;
+  height: 65px;
 }
 
 /*=====================
@@ -1698,7 +1699,8 @@ CTA AREA CSS
 FOOTER AREA CSS
 */
 .footer_logo {
-  max-width: 130px;
+  max-width: 180px;
+  height: 65px;
 }
 
 .footer_social {
