@@ -561,6 +561,8 @@ a.action_btn:hover:after {
   transition: all 0.4s;
 }
 
+
+
 a.btn2 {
   font-size: 20px;
   color: #ffffff;
@@ -595,6 +597,28 @@ a.btn2:hover {
 a.btn2:hover:after {
   width: 100%;
   transition: all 0.4s;
+}
+
+@media screen and (max-width: 1023px) {
+  .welcome_area .btn2 {
+    float: right;
+  }
+  .feature_area .btn2 {
+     float: right;
+ }
+  .counter_area .button_group {
+    display: none;
+  }
+  .counter_area .mobile_button_group {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .counter_area .mobile_button_group {
+    display: none;
+  }
 }
 
 button.signup_btn3,
@@ -666,15 +690,14 @@ a.submit_btn:hover {
 a.app_btn {
   padding: 13px 20px 13px 70px;
   display: inline-block;
-  background: #0f6eff;
+  background: #13ce67;
   position: relative;
   z-index: 2;
   color: #ffffff;
   border-radius: 5px;
-  position: relative;
-  z-index: 2;
   transition: all 0.4s;
 }
+
 a.app_btn:after {
   position: absolute;
   content: "";
@@ -689,26 +712,31 @@ a.app_btn:after {
   visibility: hidden;
   transition: all 0.4s;
 }
+
 a.app_btn:hover {
   transition: all 0.4s;
 }
+
 a.app_btn:hover:after {
   visibility: visible;
   opacity: 1;
   transition: all 0.4s;
 }
+
 a.app_btn span.app_btn_text {
   display: block;
   font-size: 30px;
   font-weight: 900;
   line-height: 30px;
 }
+
 a.app_btn span.app_btn_title {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
 }
+
 a.app_btn span.app_btn_icon {
   position: absolute;
   left: 20px;
@@ -724,6 +752,7 @@ a.app_btn span.app_btn_icon {
 .button_group a.app_btn:last-child {
   margin-left: 15px;
 }
+
 .button_group a.app_btn.app_store {
   background: #13d068;
 }
@@ -1026,11 +1055,17 @@ img.illas2 {
 
   .apps {
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .apps {
     max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .welcome_area {
@@ -1082,6 +1117,9 @@ img.illas2 {
   .apps {
     margin-top: 100px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .welcome_area {
@@ -1129,7 +1167,8 @@ img.illas2 {
 }
 @media screen and (min-width: 1440px) {
   .welcome_area {
-    height: 970px;
+    /*height: 970px;*/
+    height: 100%;
   }
 }
 /*=====================
@@ -1194,28 +1233,30 @@ FEATURE AREA CSS
 
 img.feature_img_right {
   position: absolute;
-  right: 18%;
+  right: 17%;
   top: 16%;
-  max-width: 500px;
+  max-width: 350px;
 }
 
 img.feature_img_left {
   position: absolute;
-  max-width: 450px;
+  max-width: 350px;
   left: 17%;
-  top: 18%;
+  top: 16%;
 }
 
 .feature3_img_left {
   position: absolute;
-  max-width: 550px;
+  max-width: 350px;
   top: 14%;
-  left: 17%;
+  left: 65%;
 }
 
 .feature3_img._right {
   margin-right: -166px;
-  max-width: 600px;
+  max-width: 350px;
+  right: 65%;
+  top: 16%;
 }
 
 .feature3_img_left_wrap {
@@ -1280,11 +1321,11 @@ img.shape32 {
   }
 
   img.feature_img_right {
-    right: 12%;
+    right: 17%;
   }
 
   img.feature_img_left {
-    left: 10%;
+    left: 17%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1436,7 +1477,7 @@ MORE FEATURE AREA CSS
   position: relative;
   z-index: 2;
   padding-left: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .more_feature_icon {
@@ -1462,6 +1503,9 @@ MORE FEATURE AREA CSS
   }
 
   .counter_area.section-padding {
+    padding-top: 100px;
+  }
+  .counter_area .screen_carousel {
     padding-top: 0;
   }
 }
@@ -1642,7 +1686,7 @@ APPS AREA CSS
 COUNTER AREA CSS
 */
 .screen_carousel {
-  margin-top: 100px;
+  margin-top: 0;
 }
 .screen_carousel .owl-dots {
   text-align: center;
@@ -1667,9 +1711,9 @@ COUNTER AREA CSS
   display: inline-block;
   margin-right: 30px;
   color: #1c1b2e;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 30px;
 }
 .single_counter:last-child {
   margin-right: 0;
@@ -1792,7 +1836,7 @@ COMMON AREA CSS
   font-size: 24px;
   font-weight: 900;
   line-height: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .heading h1 {
