@@ -1720,10 +1720,10 @@ FOOTER AREA CSS
   margin-right: 0;
 }
 .social1 ul li a {
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   text-align: center;
-  line-height: 40px;
+  line-height: 55px;
   border: 1px solid #e6e6e6;
   border-radius: 50%;
   color: #151d41;
@@ -1735,6 +1735,10 @@ FOOTER AREA CSS
   background: #fca25d;
   color: #ffffff;
   transition: all 0.4s;
+}
+.social1 ul li a i {
+  font-size: 1.1rem !important; /* 使用 em 单位，使图标大小相对于父元素的字体大小 */
+  /*vertical-align: middle; !* 垂直居中图标 *!*/
 }
 
 .copyright {
