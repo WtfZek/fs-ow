@@ -598,9 +598,80 @@ a.btn2:hover:after {
   width: 100%;
   transition: all 0.4s;
 }
+a.mobile_btn2 {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background: #fca25d;
+  display: inline-block;
+  padding: 20px 50px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s;
+}
+a.mobile_btn2:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  background: #ffffff;
+  z-index: -1;
+  transition: all 0.4s;
+}
+a.mobile_btn2:hover {
+  color: #1c1b2e;
+  box-shadow: 0px 20px 50px rgba(15, 110, 255, 0.2);
+  transition: all 0.4s;
+}
+a.mobile_btn2:hover:after {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+li.closeMenu {
+  font-size: 12px;
+  text-align: right;
+  /*background-color: #0a53be;*/
+}
+a.closeMenuBtn {
+  font-size: 10px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background: #fca25d;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s;
+}
+a.closeMenuBtn:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  background: #ffffff;
+  z-index: -1;
+  transition: all 0.4s;
+}
 
 @media screen and (max-width: 1023px) {
   .welcome_area .btn2 {
+    display: none;
+  }
+  .welcome_area .mobile_btn2 {
     float: right;
   }
   .feature_area .btn2 {
@@ -616,7 +687,13 @@ a.btn2:hover:after {
 }
 
 @media screen and (min-width: 1024px) {
+  .welcome_area .mobile_btn2 {
+    display: none;
+  }
   .counter_area .mobile_button_group {
+    display: none;
+  }
+  .header_area .closeMenu {
     display: none;
   }
 }
@@ -969,6 +1046,7 @@ HEADER AREA CSS
 .logo {
   max-width: 180px;
   height: 65px;
+  margin-top: 10px;
 }
 
 /*=====================
@@ -1054,7 +1132,8 @@ img.illas2 {
   }
 
   .apps {
-    margin-top: 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
