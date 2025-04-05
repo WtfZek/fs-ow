@@ -62,7 +62,7 @@
 <!--									</ul>-->
 								</li>
 <!--								<li><a href="#">产品介绍</a>-->
-								<li><a href="#AI lingmou">产品介绍</a>
+								<li ><a class="productInv">产品介绍</a>
 									<ul>
 										<li><a href="#AI lingmou">AI 图片生成「灵眸」</a></li>
 										<li><a href="#AI lingxi">AI 视频生成「灵犀」</a></li>
@@ -1031,25 +1031,39 @@
 
 		});
 		// 给整个文档添加点击事件监听器，用于判断点击位置来隐藏导航菜单
+		// document.addEventListener('click', function (event) {
+		// 	const slicknavNav = document.querySelector('ul.slicknav_nav');
+		// 	const openMenuBtn = document.querySelector('a.slicknav_btn.slicknav_open');
+		//
+		// 	const closeMenuBtn = document.querySelector('a.closeMenuBtn[role="menuitem"][tabindex="0"]')
+		// 	console.log(closeMenuBtn);
+		// 	console.log(event.target);
+		//
+		// 	// 如果点击的是打开菜单的按钮，不做任何事情
+		// 	if (openMenuBtn && openMenuBtn.contains(event.target)) {
+		// 		console.log("菜单应该打开");
+		// 		return;
+		// 	}
+		// 	// 如果点击的是打开菜单的按钮，不做任何事情
+		// 	if (slicknavNav &&!slicknavNav.contains(event.target) || closeMenuBtn && closeMenuBtn.contains(event.target)){
+		// 		console.log("菜单应该关闭");
+		// 		slicknavNav.style.display = 'none';
+		// 	}
+		//
+		// });
 		document.addEventListener('click', function (event) {
 			const slicknavNav = document.querySelector('ul.slicknav_nav');
 			const openMenuBtn = document.querySelector('a.slicknav_btn.slicknav_open');
-
-			const closeMenuBtn = document.querySelector('a.closeMenuBtn[role="menuitem"][tabindex="0"]')
-			console.log(closeMenuBtn);
-			console.log(event.target);
+			const parentMenu =  document.querySelector('a.slicknav_item.slicknav_row[aria-haspopup="true"][tabindex="0"]');
+			const menuDropIcon =  document.querySelector('span.slicknav_arrow');
+			console.log("获取的目录菜单：",parentMenu);
+			console.log("当前点击的元素：",event.target);
 
 			// 如果点击的是打开菜单的按钮，不做任何事情
-			if (openMenuBtn && openMenuBtn.contains(event.target)) {
-				console.log("菜单应该打开");
-				return;
-			}
-			// 如果点击的是打开菜单的按钮，不做任何事情
-			if (slicknavNav &&!slicknavNav.contains(event.target) || closeMenuBtn && closeMenuBtn.contains(event.target)){
+			if (openMenuBtn && !openMenuBtn.contains(event.target) && !parentMenu.contains(event.target) && !menuDropIcon.contains(event.target)) {
 				console.log("菜单应该关闭");
 				slicknavNav.style.display = 'none';
 			}
-
 		});
 
 		// 给导航菜单添加失去焦点事件监听器，失去焦点时隐藏导航菜单

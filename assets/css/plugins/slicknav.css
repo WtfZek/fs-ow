@@ -43,6 +43,7 @@ ul.slicknav_nav {
   width: 50% !important;
   height: 100%;
   display: none;
+  border-radius: 5px;
 }
 
 /* 当复选框被选中时显示导航菜单 */
