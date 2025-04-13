@@ -22,6 +22,127 @@
 	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="style.css">
 
+	<style>
+		.gradient-lingmou {
+			background: linear-gradient(45deg, #8aff8a, #008000);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			/*font-size: 32px;*/
+			font-weight: bold;
+		}
+		/* 设置艺术字样式 */
+		.gradient-lingmou .art-word {
+			font-family: 'ArtFont';
+			font-size: 2em;
+			background: linear-gradient(to right, #8aff8a, #008000);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 32px;
+		}
+
+		.gradient-lingxi {
+			background: linear-gradient(45deg, #ffc0cb, #ff69b4);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: bold;
+		}
+		/* 设置艺术字样式 */
+		.gradient-lingxi .art-word {
+			font-family: 'ArtFont';
+			font-size: 2em;
+			background: linear-gradient(to right, #ffc0cb, #ff69b4);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 32px;
+		}
+
+		.gradient-lingyun {
+			background: linear-gradient(45deg, #00bfff, #0000cd);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: bold;
+		}
+		/* 设置艺术字样式 */
+		.gradient-lingyun .art-word {
+			font-family: 'ArtFont';
+			font-size: 2em;
+			background: linear-gradient(to right, #00bfff, #0000cd);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 32px;
+		}
+
+		/* 设置艺术字样式 */
+		.gradient-lingyun .art-word-big {
+			font-family: 'ArtFont';
+			font-size: 2em;
+			background: linear-gradient(to right, #00bfff, #0000cd);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 38px;
+		}
+
+		.gradient-lingyao {
+			background: linear-gradient(45deg, #ffa500, #ff8c00);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: bold;
+		}
+		/* 设置艺术字样式 */
+		.gradient-lingyao .art-word {
+			font-family: 'ArtFont';
+			font-size: 2em;
+			background: linear-gradient(to right, #ffa500, #ff8c00);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 32px;
+		}
+
+		.gradient-lingche {
+			background: linear-gradient(45deg, #00ffff, #008080);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: bold;
+		}
+		/* 设置艺术字样式 */
+		.gradient-lingche .art-word {
+			font-family: 'ArtFont';
+			font-size: 2em;
+			background: linear-gradient(to right, #00ffff, #008080);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 32px;
+		}
+
+		.gradient-lingyi {
+			background: linear-gradient(45deg, #9370db, #8a2be2);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: bold;
+		}
+		/* 设置艺术字样式 */
+		.gradient-lingyi .art-word {
+			font-family: 'ArtFont';
+			font-size: 2em;
+			background: linear-gradient(to right, #9370db, #8a2be2);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 32px;
+		}
+	</style>
 </head>
 
 <body>
@@ -105,7 +226,8 @@
 				</div>
 				<div class="col-lg-4 align-self-center">
 					<div class="apps wow fadeInDown" data-wow-delay="0.2s">
-						<img class="apps_img" style="height: 460px" src="assets/img/screen/zhanwei.png" alt="">
+<!--						加个圆角-->
+						<img class="apps_img" style="margin-top: 50px; height: 550px; border-radius: 10px" src="assets/img/screen/xiaochengxu.png" alt="">
 <!--						<img class="mobile_img" style="width: 80%" src="assets/img/screen/zhanwei.png" alt="">-->
 					</div>
 				</div>
@@ -216,27 +338,27 @@
 			<div class="row">
 				<div class="col-12 mobile_img">
 					<div class="mobile_feature_img">
-						<img src="assets/img/screen/screen12.png" alt="">
+						<img src="assets/img/screen/lingmou.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="heading wow fadeInUp">
-						<h1>AI 图片生成「灵眸」</h1>
+						<h3 class="gradient-lingyun">AI 图片生成<span class="art-word">「 灵<span class="art-word-big"> 眸 」</span></span></h3>
 <!--						<p>「灵眸」接口以 “智能生成 + 后置优化” 混合模式，释放 AI 效率潜能，已服务 1000 + 企业客户，累计生成图像超 1 亿张，支持消费级 GPU 实时渲染（3 帧 / 秒），</p>-->
 						<p>「灵眸」因较好的性价比与效率提升了我们接口服务的续订率。立即试用，目之所及，皆为灵感，感受科技与美学的灵眸之约！</p>
 						<div class="space-30"></div>
-						<a href="#try app" class="btn2">免费体验</a>
+						<a href="#try app" class="btn2" style="background-color: #0073e6;">免费体验</a>
 					</div>
 				</div>
 				<div class="col-lg-6 tab_img">
 					<div class="feature_tab_img_right">
-						<img src="assets/img/screen/screen12.png" alt="">
+						<img src="assets/img/screen/lingmou.png" alt="">
 					</div>
 				</div>
 
 			</div>
 		</div>
-		<img src="assets/img/screen/screen12.png" alt="" class="feature_img_right">
+		<img src="assets/img/screen/lingmou.png" alt="" class="feature_img_right">
 	</div>
 	<!--::::: FEATURE AREA END :::::::-->
 
@@ -246,25 +368,25 @@
 			<div class="row justify-content-end">
 				<div class="col-12 mobile_img">
 					<div class="mobile_feature_img2">
-						<img src="assets/img/screen/screen13.png" alt="">
+						<img src="assets/img/screen/lingxi.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6 tab_img">
 					<div class="feature_tab_img_left">
-						<img src="assets/img/screen/screen13.png" alt="">
+						<img src="assets/img/screen/lingxi.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="heading wow fadeInUp">
-						<h1>AI 视频生成「灵犀」</h1>
+						<h3 class="gradient-lingyun">AI 视频生成<span class="art-word">「 灵<span class="art-word-big"> 犀 」</span></span></h3>
 						<p>「灵犀」接口既包含低价基本生图，也包含高性价比精准生图。立即体验，感受 AI 与您的心有灵犀！</p>
 						<div class="space-30"></div>
-						<a href="#try app" class="btn2">免费体验</a>
+						<a href="#try app" class="btn2" style="background-color: #0073e6;">免费体验</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<img src="assets/img/screen/screen13.png" alt="" class="feature_img_left">
+		<img src="assets/img/screen/lingxi.png" alt="" class="feature_img_left">
 	</div>
 	<!--::::: FEATURE AREA END :::::::-->
 
@@ -274,27 +396,27 @@
 			<div class="row">
 				<div class="col-12 mobile_img">
 					<div class="mobile_feature_img">
-						<img src="assets/img/screen/screen12.png" alt="">
+						<img src="assets/img/screen/lingyun.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="heading wow fadeInUp">
-						<h1>AI 音乐生成「灵韵」</h1>
+						<h3 class="gradient-lingyun">AI 音乐生成<span class="art-word">「 灵<span class="art-word-big"> 韵 」</span></span></h3>
 						<p>「灵韵」接口在音乐创作上可极大程度降低版权纠纷率。立即体验，解锁声音智能的无限可能！声动人心，灵韵共鸣，聆听灵韵与未来的和鸣！
 						</p>
 						<div class="space-30"></div>
-						<a href="#try app" class="btn2">免费体验</a>
+						<a href="#try app" class="btn2" style="background-color: #0073e6;">免费体验</a>
 					</div>
 				</div>
 				<div class="col-lg-6 tab_img">
 					<div class="feature_tab_img_right">
-						<img src="assets/img/screen/screen12.png" alt="">
+						<img src="assets/img/screen/lingyun.png" alt="">
 					</div>
 				</div>
 
 			</div>
 		</div>
-		<img src="assets/img/screen/screen12.png" alt="" class="feature_img_right">
+		<img src="assets/img/screen/lingyun.png" alt="" class="feature_img_right">
 	</div>
 	<!--::::: FEATURE AREA END :::::::-->
 
@@ -304,25 +426,25 @@
 			<div class="row justify-content-end">
 				<div class="col-12 mobile_img">
 					<div class="mobile_feature_img2">
-						<img src="assets/img/screen/screen13.png" alt="">
+						<img src="assets/img/screen/lingyao.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6 tab_img">
 					<div class="feature_tab_img_left">
-						<img src="assets/img/screen/screen13.png" alt="">
+						<img src="assets/img/screen/lingyao.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="heading wow fadeInUp">
-						<h1>AI 音频复刻「灵曜」</h1>
+						<h3 class="gradient-lingyun">AI 音频复刻<span class="art-word">「 灵<span class="art-word-big"> 曜 」</span></span></h3>
 						<p>「灵曜」音频复刻通过百万级广告和公共直播音频数据训练，情绪把控精准。声声入扣，灵曜再现，见证灵曜与传承的共鸣！</p>
 						<div class="space-30"></div>
-						<a href="#try app" class="btn2">免费体验</a>
+						<a href="#try app" class="btn2" style="background-color: #0073e6;">免费体验</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<img src="assets/img/screen/screen13.png" alt="" class="feature_img_left">
+		<img src="assets/img/screen/lingyao.png" alt="" class="feature_img_left">
 	</div>
 	<!--::::: FEATURE AREA END :::::::-->
 
@@ -332,27 +454,26 @@
 			<div class="row">
 				<div class="col-12 mobile_img">
 					<div class="mobile_feature_img">
-						<img src="assets/img/screen/screen12.png" alt="">
+						<img src="assets/img/screen/lingche.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="heading wow fadeInUp">
-						<h1>AI 数字人「灵澈」</h1>
+						<h3 class="gradient-lingyun">AI 数字人<span class="art-word">「 灵<span class="art-word-big"> 澈 」</span></span></h3>
 						<p>「灵澈」数字人在单纯画面表现上已经高度接近真人。虚实交融，灵澈通明，感受科技与人文的澈悟之境！
 						</p>
 						<div class="space-30"></div>
-						<a href="#try app" class="btn2">免费体验</a>
+						<a href="#try app" class="btn2" style="background-color: #0073e6;">免费体验</a>
 					</div>
 				</div>
 				<div class="col-lg-6 tab_img">
 					<div class="feature_tab_img_right">
-						<img src="assets/img/screen/screen12.png" alt="">
+						<img src="assets/img/screen/lingche.png" alt="">
 					</div>
 				</div>
-
 			</div>
 		</div>
-		<img src="assets/img/screen/screen12.png" alt="" class="feature_img_right">
+		<img src="assets/img/screen/lingche.png" alt="" class="feature_img_right">
 	</div>
 	<!--::::: FEATURE AREA END :::::::-->
 
@@ -372,11 +493,10 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="heading wow fadeInUp">
-						<h1>AI 无人直播「灵缈」</h1>
-						<p>「灵缈」AI 无人直播可根据直播内容和氛围实时调整展现状态，直播无绊，灵缈相伴，让直播间永不打烊，探索灵缈与创新的无限可能！
-						</p>
+						<h3 class="gradient-lingyun">AI 无人直播<span class="art-word">「 灵<span class="art-word-big"> 漪 」</span></span></h3>
+						<p>「灵漪」AI 无人直播可根据直播内容和氛围实时调整展现状态，直播无绊，灵漪相伴，让直播间永不打烊，探索灵漪与创新的无限可能！</p>
 						<div class="space-30"></div>
-						<a href="#try app" class="btn2">免费体验</a>
+						<a href="#try app" class="btn2" style="background-color: #0073e6;">免费体验</a>
 					</div>
 				</div>
 			</div>
@@ -986,12 +1106,14 @@
 		// 定义小程序配置对象（替换为实际有效的配置）
 		const miniProgramConfig = {
 			appId: 'wx8e058848e83b8b40',
-			path: ''
+			path: 'pages/index/index'
 		};
 
+		const miniProgramUrl = 'weixin://dl/business/?appid='+miniProgramConfig.appId+'&path='+miniProgramConfig.path;
+
 		// 为不同按钮添加点击事件监听器，传入对应的按钮ID和微信链接
-		addClickListener('wechatMiniProgramBtn', 'weixin://dl/business/?appid=wx8e058848e83b8b40');
-		addClickListener('mobileWechatMiniProgramBtn', 'weixin://dl/business/?appid=wx8e058848e83b8b40');
+		addClickListener('wechatMiniProgramBtn', miniProgramUrl);
+		addClickListener('mobileWechatMiniProgramBtn', miniProgramUrl);
 
 		document.addEventListener('DOMContentLoaded', function () {
 			const downloadBtn = document.getElementById('downloadApkBtn');
@@ -1070,6 +1192,7 @@
 		slicknavNav.addEventListener('blur', function () {
 			slicknavNav.style.display = 'none';
 		});
+
 	</script>
 
 	<!--::::: ALL JS FILES :::::::-->

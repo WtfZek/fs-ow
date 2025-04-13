@@ -1324,8 +1324,10 @@ img.feature_img_right {
 img.feature_img_left {
   position: absolute;
   max-width: 350px;
+  max-height: 400px;
   left: 17%;
   top: 16%;
+  bottom: 16%;
 }
 
 .feature3_img_left {
